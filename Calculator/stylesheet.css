@@ -42,6 +42,10 @@ body
     color: #0ef;
 }
 
+.navbar a:hover{
+    color: #ededed;
+}
+
 .container 
 {
     margin: 40px auto;
