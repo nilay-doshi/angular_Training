@@ -7,8 +7,8 @@
 // at script.js:1:13
 
 //2
-//console.log(x);
-//var y = 10;
+// console.log(y);
+// var y = 10;
 //Output Error 
 //Uncaught ReferenceError: x is not defined
 //at script.js:9:13
