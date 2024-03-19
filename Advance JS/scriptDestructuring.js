@@ -26,7 +26,7 @@
 
 //Task 5
 
-// const [a, b, ...{ length }] = [1, 2, 3];
-// console.log(a, b, length);
+// const [a, b, ...{ length  }] = [1, 2, 3];
+ //console.log(a, b, length);
 // output - 1,2,1 because 1 element is left initializing
 

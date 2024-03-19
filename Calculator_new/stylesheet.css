@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppings", sans-serif;
+}
+
+body {
+  background-color: #74c365;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #006a4e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #ededed;
+  font-weight: 600;
+}
+.navbar a {
+  display: inline-block;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 35px;
+  color: #ace1af;
+}
+
+.navbar a:hover {
+  color: #ededed;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-top: 0.2rem;
+}
+
+.calculator {
+  background-color: #ace1af;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px -2px 26px rgba(3, 2, 2, 2.2);
+}
+
+.display {
+  height: 50px;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  text-align: right;
+  flex: 1;
+}
+
+.display .input {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding-right: 20px;
+  color: #006a4e;
+}
+
+.display .output {
+  /* font-size: 3rem; */
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  padding-right: 20px;
+  color: #006a4e;
+}
+
+.display .operator {
+  color: #ec1010;
+}
+
+.display .brackets,
+.display .percent {
+  color: #e62f2f;
+}
+
+.keys {
+  background-color: rgba(41, 45, 54, 0.4);
+  margin: 10px;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+  box-shadow: 0px -2px 16px rgba(1, 2, 2, 0.2);
+  width: 250px;
+  height: 300px;
+}
+.keys .key {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  height: 0;
+  padding-top: 100%;
+  background-color: #262933;
+  border-radius: 1rem;
+  transition: 0.1s;
+  user-select: none;
+}
+
+.keys .key span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #fff;
+}
+
+.keys .key:hover {
+  box-shadow: inset 20px 20px 20px rgba(10, 0, 0, 0.2);
+}
+
+.keys .key.operator span {
+  color: #eb6666;
+}
+
+.keys .key.action span {
+  color: #26fed7;
+}
+
+.error {
+  color: red;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 6%;
+  background: #006a4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ace1af;
+}

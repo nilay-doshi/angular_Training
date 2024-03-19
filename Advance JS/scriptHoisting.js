@@ -16,16 +16,16 @@
 
 //3
 
-// var a = 4;
-// function greet()
-// {
-//     b = "hello";
-//     console.log(b);
-//     var b;
-// }
-// greet();
+var a = 4;
+function greet()
+{
+    b = "hello";
+    console.log(b);
+    var b;
+}
+greet();
+console.log(b);
 
-// console.log(b);
 
 // Output hello
 // script.js:25  Uncaught ReferenceError: b is not defined
