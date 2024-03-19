@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #74c365;
+  background: url(bg_image.jpg) no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -14,7 +15,8 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: #006a4e;
+  background: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +35,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin-left: 35px;
-  color: #ace1af;
+  color:  #40f17b;
 }
 
 .navbar a:hover {
@@ -49,13 +51,15 @@ body {
 }
 
 .calculator {
-  background-color: #ace1af;
-  height: 90%;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect to background */  height: 90%;
   display: flex;
   flex-direction: column;
   border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0px -2px 26px rgba(3, 2, 2, 2.2);
+  box-shadow: 0px -2px 26px rgba(3, 2, 2, 3.2);
+  transition: background-color 0.3s ease; 
+  border: 3px solid  #89daa4;;
 }
 
 .display {
@@ -73,18 +77,17 @@ body {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   padding-right: 20px;
-  color: #006a4e;
+  color: white;
 }
 
 .display .output {
-  /* font-size: 3rem; */
   font-size: 1.5rem;
   font-weight: 700;
   width: 100%;
   max-width: 100%;
   overflow: auto;
   padding-right: 20px;
-  color: #006a4e;
+  color: white;
 }
 
 .display .operator {
@@ -105,7 +108,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 1rem;
-  box-shadow: 0px -2px 16px rgba(1, 2, 2, 0.2);
+  box-shadow: 0px -2px 16px rgba(1, 2, 2, 1.8);
   width: 250px;
   height: 300px;
 }
@@ -142,19 +145,16 @@ body {
   color: #26fed7;
 }
 
-.error {
-  color: red;
-}
-
 footer {
   bottom: 0;
   position: fixed;
   width: 100%;
   height: 6%;
-  background: #006a4e;
+  background: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ace1af;
+  color: #40f17b;
 }
