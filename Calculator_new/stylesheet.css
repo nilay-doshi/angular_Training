@@ -15,7 +15,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin-left: 35px;
-  color:  #40f17b;
+  color: #40f17b;
 }
 
 .navbar a:hover {
@@ -52,14 +52,15 @@ body {
 
 .calculator {
   background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
-  backdrop-filter: blur(10px); /* Apply blur effect to background */  height: 90%;
+  backdrop-filter: blur(10px); /* Apply blur effect to background */
+  height: 90%;
   display: flex;
   flex-direction: column;
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0px -2px 26px rgba(3, 2, 2, 3.2);
-  transition: background-color 0.3s ease; 
-  border: 3px solid  #89daa4;;
+  transition: background-color 0.3s ease;
+  border: 3px solid #89daa4;
 }
 
 .display {
@@ -150,7 +151,7 @@ footer {
   position: fixed;
   width: 100%;
   height: 6%;
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
