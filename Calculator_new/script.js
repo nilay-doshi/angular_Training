@@ -12,8 +12,7 @@ for (let key of keys) {
       input = "";
       displayInput.innerHTML = "";
       displayOutput.innerHTML = "";
-    }
-    else if (value == "backspace") {
+    } else if (value == "backspace") {
       input = input.slice(0, -1);
       displayInput.innerHTML = cleanInput(input);
     } else if (value == "=") {
@@ -102,14 +101,12 @@ function cleanOutput(output) {
 }
 
 function validateInput(value) {
-  const operators = ["+", "-", "*", "/", "%",".","("];
-  if(displayInput.innerHTML=="" && operators.includes(value)){
-  return false 
-  }
-  else if(operators.includes(value) && operators.includes(input.slice(-1))){
-  return false;
-  }
-  else{
+  const operators = ["+", "-", "*", "/", "%", ".", "("];
+  if (displayInput.innerHTML == "" && operators.includes(value)) {
+    return false;
+  } else if (operators.includes(value) && operators.includes(input.slice(-1))) {
+    return false;
+  } else {
     return true;
   }
 }
