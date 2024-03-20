@@ -102,27 +102,16 @@ function cleanOutput(output) {
 }
 
 function validateInput(value) {
-  let operators = ["+", "-", "*", "/", "%",".","("];
+  const operators = ["+", "-", "*", "/", "%",".","("];
   if(displayInput.innerHTML=="" && operators.includes(value)){
-return false 
-  }else if(operators.includes(value) && operators.includes(input.slice(-1))){
-return false;
-  }else{
+  return false 
+  }
+  else if(operators.includes(value) && operators.includes(input.slice(-1))){
+  return false;
+  }
+  else{
     return true;
   }
-  // let lastInput = input.slice(-1);
-  // if (value == "." && lastInput == ".") {
-  //   return false;
-  // }
-
-  // if (operators.includes(value)) {
-  //   if (operators.includes(lastInput)) {
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-  // }
-  // return true;
 }
 
 function prepareInput(input) {
