@@ -12,7 +12,8 @@ for (let key of keys) {
       input = "";
       displayInput.innerHTML = "";
       displayOutput.innerHTML = "";
-    } else if (value == "backspace") {
+    }
+    else if (value == "backspace") {
       input = input.slice(0, -1);
       displayInput.innerHTML = cleanInput(input);
     } else if (value == "=") {
@@ -22,7 +23,7 @@ for (let key of keys) {
           throw new Error("Error");
         }
         displayOutput.innerHTML = cleanOutput(result);
-        let cleanResult = cleanOutput(input + " " + result);
+        let cleanResult = input + " " + result;
 
         records.push(cleanResult);
         console.log(records);
@@ -101,20 +102,27 @@ function cleanOutput(output) {
 }
 
 function validateInput(value) {
-  const lastInput = input.slice(-1);
-  const operators = ["+", "-", "*", "/", "%"];
-  if (value == "." && lastInput == ".") {
-    return false;
+  let operators = ["+", "-", "*", "/", "%",".","("];
+  if(displayInput.innerHTML=="" && operators.includes(value)){
+return false 
+  }else if(operators.includes(value) && operators.includes(input.slice(-1))){
+return false;
+  }else{
+    return true;
   }
+  // let lastInput = input.slice(-1);
+  // if (value == "." && lastInput == ".") {
+  //   return false;
+  // }
 
-  if (operators.includes(value)) {
-    if (operators.includes(lastInput)) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-  return true;
+  // if (operators.includes(value)) {
+  //   if (operators.includes(lastInput)) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
+  // return true;
 }
 
 function prepareInput(input) {
