@@ -3,7 +3,7 @@ const displayInput = document.querySelector(".input");
 const displayOutput = document.querySelector(".output");
 
 let input = "";
-
+let records = [];
 for (let key of keys) {
   const value = key.dataset.key;
 
@@ -22,6 +22,10 @@ for (let key of keys) {
           throw new Error("Error");
         }
         displayOutput.innerHTML = cleanOutput(result);
+        let cleanResult = cleanOutput(input + " " + result);
+    
+        records.push(cleanResult);
+        console.log(records);
       } catch (error) {
         displayOutput.innerHTML = "Error";
       }
