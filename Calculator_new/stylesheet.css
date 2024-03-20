@@ -159,3 +159,9 @@ footer {
   text-align: center;
   color: #40f17b;
 }
+
+@media screen and (min-width: 1440px) {
+  .calculator {
+      height: 70%;
+   }
+}
