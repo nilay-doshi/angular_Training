@@ -23,7 +23,7 @@ for (let key of keys) {
         }
         displayOutput.innerHTML = cleanOutput(result);
         let cleanResult = cleanOutput(input + " " + result);
-    
+
         records.push(cleanResult);
         console.log(records);
       } catch (error) {
@@ -101,8 +101,8 @@ function cleanOutput(output) {
 }
 
 function validateInput(value) {
-    const lastInput = input.slice(-1);
-    const operators = ["+", "-", "*", "/","%"];
+  const lastInput = input.slice(-1);
+  const operators = ["+", "-", "*", "/", "%"];
   if (value == "." && lastInput == ".") {
     return false;
   }
