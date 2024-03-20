@@ -54,7 +54,7 @@ for (let key of keys) {
     }
   });
 }
-
+//For display of clean input
 function cleanInput(input) {
   let inputArray = input.split("");
   let inputArrayLength = inputArray.length;
@@ -78,7 +78,7 @@ function cleanInput(input) {
   }
   return inputArray.join("");
 }
-
+// For display of clean output
 function cleanOutput(output) {
   let outputString = output.toString();
   let decimal = outputString.split(" ")[1];
@@ -99,7 +99,7 @@ function cleanOutput(output) {
 
   return outputArray.join("");
 }
-
+// for validating input
 function validateInput(value) {
   const operators = ["+", "-", "*", "/", "%", ".", "("];
   if (displayInput.innerHTML == "" && operators.includes(value)) {
@@ -110,7 +110,7 @@ function validateInput(value) {
     return true;
   }
 }
-
+//prepare input for percentage.
 function prepareInput(input) {
   const inputArray = input.split("");
 
