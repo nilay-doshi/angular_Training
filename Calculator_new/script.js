@@ -61,19 +61,19 @@ function cleanInput(input) {
 
   for (let i = 0; i < inputArrayLength; i++) {
     if (inputArray[i] == "*") {
-      inputArray[i] = `<span class="operator">x</span> `;
+      inputArray[i] = `<span class="operator"> x </span> `;
     } else if (inputArray[i] == "/") {
-      inputArray[i] = '<span class="operator">÷</span>';
+      inputArray[i] = '<span class="operator"> ÷ </span>';
     } else if (inputArray[i] == "+") {
-      inputArray[i] = '<span class="operator">+</span>';
+      inputArray[i] = '<span class="operator"> + </span>';
     } else if (inputArray[i] == "-") {
-      inputArray[i] = '<span class="operator">-</span>';
+      inputArray[i] = '<span class="operator"> - </span>';
     } else if (inputArray[i] == "(") {
       inputArray[i] = '<span class="brackets">(</span>';
     } else if (inputArray[i] == ")") {
       inputArray[i] = '<span class="brackets">)</span>';
     } else if (inputArray[i] == "%") {
-      inputArray[i] = '<span class="operator">%</span>';
+      inputArray[i] = '<span class="operator"> % </span>';
     }
   }
   return inputArray.join("");
