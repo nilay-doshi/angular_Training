@@ -1,35 +1,35 @@
 interface Address {
-    city: string;
-    pincode: string;
-    street: string;
+  city: string;
+  pincode: string;
+  street: string;
 }
 
 interface PersonInfo {
-    firstName: string;
-    lastName: string;
-    age: number;
-    address: Address;
-    contacts?: string[];
-    getFullName: () => string;
-    getFullAddress: () => string;
+  firstName: string;
+  lastName: string;
+  age: number;
+  address: Address;
+  contacts?: string[];
+  getFullName: () => string;
+  getFullAddress: () => string;
 }
 
 const PersonInfo: PersonInfo = {
-    firstName: "Nilay",
-    lastName: "Doshi",
-    age: 30,
-    address: {
-        city: "Ahmedabad",
-        pincode: "382415",
-        street: "Ambicanagar"
-    },
-    contacts: ["nilaydoshi@bacancy.com", "+91-9033062657"],
-    getFullName: function() {
-        return `${this.firstName} ${this.lastName}`;
-    },
-    getFullAddress: function() {
-        return `${this.address.street}, ${this.address.city}, ${this.address.pincode}`;
-    }
+  firstName: "Nilay",
+  lastName: "Doshi",
+  age: 30,
+  address: {
+    city: "Ahmedabad",
+    pincode: "382415",
+    street: "Ambicanagar",
+  },
+  contacts: ["nilaydoshi@bacancy.com", "+91-9033062657"],
+  getFullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  getFullAddress: function () {
+    return `${this.address.street}, ${this.address.city}, ${this.address.pincode}`;
+  },
 };
 
 // Example usage
