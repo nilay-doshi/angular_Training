@@ -32,7 +32,6 @@ const PersonInfo: PersonInfo = {
   },
 };
 
-// Example usage
 console.log("Full Name:", PersonInfo.getFullName());
 console.log("Full Address:", PersonInfo.getFullAddress());
 console.log("Contacts:", PersonInfo.contacts);
